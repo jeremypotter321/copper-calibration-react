@@ -1,6 +1,6 @@
 import { shop } from '../data/shop';
 
-export default function Footer() {
+export default function Footer({ base = '' }) {
   return (
     <footer className="footer">
       <div className="shell">
@@ -17,10 +17,10 @@ export default function Footer() {
 
           <div className="footer-col">
             <h5>Shop</h5>
-            <a href="#tuning">Tuning</a>
-            <a href="#bays">Service Bays</a>
-            <a href="#diagnostics">Diagnostics</a>
-            <a href="#garage">Hours</a>
+            <a href={`${base}#tuning`}>Tuning</a>
+            <a href={`${base}#bays`}>Services</a>
+            <a href={`${base}#diagnostics`}>Diagnostics</a>
+            <a href={`${base}#garage`}>Hours</a>
           </div>
 
           <div className="footer-col">

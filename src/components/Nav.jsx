@@ -4,19 +4,20 @@ import { useScrollProgress } from '../hooks/useReveal';
 
 const LINKS = [
   ['#tuning', 'Tuning'],
-  ['#bays', 'Service Bays'],
+  ['#bays', 'Services'],
   ['#diagnostics', 'Diagnostics'],
   ['#garage', 'The Garage'],
 ];
 
-export default function Nav() {
+/** `base` is '/' on the projects page so the section links go back to the home page. */
+export default function Nav({ base = '' }) {
   const progress = useScrollProgress();
   const [open, setOpen] = useState(false);
 
   return (
     <header className="nav">
       <div className="shell nav-inner">
-        <a className="brand" href="#top" onClick={() => setOpen(false)}>
+        <a className="brand" href={`${base}#top`} onClick={() => setOpen(false)}>
           <svg className="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
             <circle cx="20" cy="20" r="18" fill="none" stroke="#c0743a" strokeWidth="2" />
             <circle cx="20" cy="20" r="12" fill="none" stroke="#33383f" strokeWidth="1.5" />
@@ -32,7 +33,7 @@ export default function Nav() {
 
         <nav className={`nav-links ${open ? 'open' : ''}`}>
           {LINKS.map(([href, label]) => (
-            <a key={href} href={href} onClick={() => setOpen(false)}>
+            <a key={href} href={`${base}${href}`} onClick={() => setOpen(false)}>
               {label}
             </a>
           ))}

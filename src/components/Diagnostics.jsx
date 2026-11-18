@@ -90,8 +90,8 @@ export default function Diagnostics() {
           </div>
           <p className="section-note">
             Parts-cannon repairs are expensive and they rarely work. Every job starts
-            with a real diagnosis — factory software, a smoke machine and actual test
-            results.
+            with a real diagnosis — factory software, OEM-level programming, a smoke
+            machine and actual test results.
           </p>
         </div>
 

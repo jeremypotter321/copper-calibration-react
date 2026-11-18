@@ -1,7 +1,7 @@
 import { shop } from '../data/shop';
 import { useReveal } from '../hooks/useReveal';
 
-export default function Booking() {
+export default function Booking({ showProjectsLink = true }) {
   const [ref, cls] = useReveal();
 
   return (
@@ -30,6 +30,11 @@ export default function Booking() {
             Service Request
           </a>
         </div>
+        {showProjectsLink && (
+          <a className="book-more" href="/projects.html">
+            See past &amp; current projects <span className="arrow">→</span>
+          </a>
+        )}
       </div>
     </section>
   );

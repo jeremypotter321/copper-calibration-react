@@ -102,7 +102,7 @@ export const bays = [
     items: [
       'ISTA+ full-system fault scan',
       'Smoke test — vacuum & boost leaks',
-      'UV dye leak detection',
+      'E-Sys / OEM-level programming',
       'Compression testing',
       'BMW coding',
     ],
@@ -162,16 +162,16 @@ export const toolbox = [
       'The same diagnostic software the dealer runs. Full module access, guided test plans, live values and coding — not a $30 code reader guessing at a P-code.',
   },
   {
+    name: 'E-Sys',
+    kind: 'OEM-level programming',
+    detail:
+      'BMW’s own engineering software for module programming and coding. New modules get set up and coded to the car, and features get turned on or off the way the factory does it.',
+  },
+  {
     name: 'Smoke Machine',
     kind: 'Vacuum & boost leak testing',
     detail:
       'Pressurize the intake tract and watch where it escapes. Cracked charge pipe, tired PCV, split boot — it shows up in seconds instead of after three parts orders.',
-  },
-  {
-    name: 'UV Dye',
-    kind: 'Leak detection',
-    detail:
-      'Dye in the system, blacklight on the block. That mystery drip on the driveway gets a name and an address.',
   },
   {
     name: 'Compression Tester',
@@ -180,3 +180,17 @@ export const toolbox = [
       'Before any calibration goes near a motor, the bottom end gets a verdict. Numbers on paper, no optimism required.',
   },
 ];
+
+// Projects page (projects.html). One entry per car. `status` is 'current' (in the shop now)
+// or 'past' (done). `photo` is a file in public/projects/, e.g. '/projects/335i-single-turbo.jpg'.
+// Only list real builds the owner of the car is happy to show. Example:
+//   {
+//     title: 'Single-turbo swap',
+//     car: '2008 BMW 335i (N54)',
+//     status: 'current',
+//     summary: 'One or two sentences on the goal and where it stands.',
+//     work: ['Single turbo kit', 'Port-injection E85', 'Custom tune'],
+//     photo: '/projects/335i-single-turbo.jpg',
+//     link: 'https://www.instagram.com/p/…', // optional: the build on Instagram / TikTok
+//   },
+export const projects = [];

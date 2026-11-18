@@ -84,3 +84,11 @@ src/
 ```
 
 Built with Vite and React 19.
+
+---
+
+## Projects page
+
+`projects.html` (linked under "Bring the car. Let's find the power.") lists past and current builds from the
+`projects` array at the bottom of `src/data/shop.js`. It ships empty and shows a "follow along on Instagram / TikTok"
+note until builds are added. Add an entry per car (format in the comment there) and put photos in `public/projects/`.
