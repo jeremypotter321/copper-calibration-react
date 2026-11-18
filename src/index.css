@@ -397,6 +397,7 @@ h4 {
   display: block;
   position: relative;
   width: fit-content;
+  margin-bottom: 0.14em;
 }
 
 /* skewed copper underline — livery stripe under the first line */
@@ -405,7 +406,7 @@ h4 {
   position: absolute;
   left: 0;
   right: -6px;
-  bottom: 0.1em;
+  bottom: -0.1em;
   height: 7px;
   background: linear-gradient(90deg, var(--copper), var(--copper-hot));
   transform: skewX(-20deg);
