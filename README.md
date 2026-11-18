@@ -53,8 +53,8 @@ cleanly to mobile. `prefers-reduced-motion` disables the animation throughout.
 The source site is deliberately thin on specifics — no pricing, no supported-platform
 list, no tune stages. Rather than invent figures for a real business:
 
-- Tuning is organised around what's actually offered — **in-person**, **remote** and
-  **tune prep** — instead of fabricated Stage 1/2/3 tiers.
+- Tuning is organised around what's actually offered — **in-person**, **remote** and a
+  **service request** — instead of fabricated Stage 1/2/3 tiers.
 - The tachometer is decorative. No horsepower, torque or dyno claims appear anywhere.
 - Booking buttons point at the shop's real Google Calendar links; social links point at
   the real accounts.

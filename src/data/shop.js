@@ -78,19 +78,19 @@ export const tuningModes = [
     cta: { label: 'Start a Remote Tune', href: shop.links.bookTune },
   },
   {
-    id: 'prep',
-    label: 'Tune Prep',
-    kicker: 'Before you add boost',
+    id: 'service',
+    label: 'Service Request',
+    kicker: 'Repairs, maintenance & diagnostics',
     blurb:
-      'A tune amplifies whatever the engine is already doing — including the bad habits. Prep work first: fresh plugs, healthy coils, clean oil, no leaks. Then we turn it up.',
+      "Not here for a tune? Tell me what the car is doing — a warning light, a leak, a misfire or just routine maintenance — and we'll get it on the lift and sort it out.",
     sheet: [
-      ['Ignition', 'Spark plugs + coilpacks'],
-      ['Fluids', 'Oil change'],
-      ['Leak check', 'Smoke test — vacuum & boost'],
-      ['Fuel', 'Injector cleaning + coding'],
-      ['Outcome', 'Clean baseline for calibration'],
+      ['Request type', 'Repair, maintenance or diagnosis'],
+      ['Diagnostics', 'ISTA+ scan + smoke test'],
+      ['Programming', 'E-Sys / OEM-level coding'],
+      ['Maintenance', 'Plugs, coils, oil, injectors'],
+      ['Booking', 'Appointment only'],
     ],
-    cta: { label: 'Book Prep Work', href: shop.links.bookService },
+    cta: { label: 'Request Service', href: shop.links.bookService },
   },
 ];
 
